@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="box1" class="box"></div>
+  <div id="box2"></div>
+  <div id="circle1"></div>
+  <div id="circle2"></div>
+  <script>
+    class Element{
+      constructor(selector){
+        this.elem = document.getElementById(selector);
+      }
+
+      hide(){
+        this.elem.style.display = 'none';
+      }
+
+      show(){
+        this.elem.style.display = 'block';
+      }
+    }
+
+    class Box extends Element{
+      constructor(par){
+        super(par.selector)
+
+        this.elem.style.width = this.elem.style.height = par.size + 'px'
+        this.elem.style.background = par.color
+      }
+    }
+
+    let box1 = new Box({
+      selector: 'box1',
+      size: 100,
+      color: 'red'
+    })
+
+    class Circle extends Box{
+      constructor(par){
+        super(par)
+
+        this.elem.style.borderRadius = '50%'
+      }
+    }
+
+    let circle1 = new Circle({
+      selector: 'circle1',
+      size: 200,
+      color: 'blue' 
+    })
+  </script>
+</body>
+
+</html>
