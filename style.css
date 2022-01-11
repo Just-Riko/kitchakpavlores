@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;1,200&family=PT+Sans&display=swap');
+
+body{
+    background-color:  rgb(66, 62, 58);
+    max-width: 1000px;
+    margin: auto;
+}
+h1{
+    font-family: 'PT Sans', sans-serif;
+    font-size: 52px;
+    text-align: center;
+    margin: auto;
+    color: rgb(150, 105, 94);
+    letter-spacing: 1px;
+    padding: 40px 0 15px 0;
+}
+h3{
+    font-family: 'Montserrat', serif;
+    letter-spacing: 2px;
+    color: rgb(203, 142, 126);
+    margin: auto;
+    text-align: center;
+    font-size: 16px;
+}
+h4{
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    letter-spacing: 2px;
+}
+h6{
+    padding: 10px 0 0 10px;
+    color: rgb(203, 142, 126);
+    font-size: 20px;
+}
+p{
+    font-family: 'Montserrat';
+    color: rgb(203, 142, 126);
+    width: 100%;
+    position: relative;
+    padding: 60px 0 0 30px;
+}
+div{
+    width: 100px;
+    height: 100px;
+}
+ul{
+    list-style: none;
+    font-family: 'Montserrat';
+    color: black;
+    padding: 0 0 0 10px;
+}
+li{
+    margin-top: 10px;
+    cursor: pointer;
+}
+span{
+    padding-left: 20px;
+    color: rgb(203, 142, 126);
+
+}
+.hr{
+    width: 90%;
+    margin:auto;
+    border-bottom: 4px solid black;
+    height: 0px;
+    margin-top: 30px;
+}
+.row{
+    width: 100%;
+}
+.edu{
+    font-size: 14px;
+    color: rgb(246, 244, 241);
+    opacity: 80%;
+    padding-top: 0px;
+    padding-left: 10px;
+}
+.ed{
+    width: 100%;
+    border-left: 4px solid black;
+}
+.dot{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    margin-left: -7px;
+    background-color: white;
+    border-radius: 50%
+}
+.con{
+    margin-top: 110px;
+    padding-left: 20px;
+}
+.skillsblock{
+    margin-top: 110px;
+    padding-left: 20px;
+}
+.skills{
+    padding-left: 0px;
+}
+.dots{
+    background-color: black;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 1s;
+
+}
+i:hover{
+color: white;
+}
+.active{
+    background-color: white;
+}
+.dot1:hover .li1{
+    display: none;
+}
+.discript{
+    display: inline;
+    padding-left: 100px;
+    white-space: nowrap;
+    display: none;
+    font-family: 'Montserrat';
+    color: rgb(203, 142, 126);
+
+}
+li:hover .discript{
+    display: inline;
+}
+
+@media (max-width:700px) {
+    .con{
+        margin-top: 140px;
+    }
+}
+@media (max-width:600px) {
+    .con{
+        margin-top: 180px;
+    }
+}
+@media (max-width: 500px) {
+    .con{
+        margin-top: 250px;
+    }
+}
