@@ -58,6 +58,14 @@ span{
     color: rgb(203, 142, 126);
 
 }
+a{
+    color: rgb(203, 142, 126);
+    padding-left: 20px;
+    text-decoration: none;
+}
+a:hover{
+    color: chocolate;
+}
 .hr{
     width: 90%;
     margin:auto;
